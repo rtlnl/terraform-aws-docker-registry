@@ -33,7 +33,6 @@ variable "labels" {
 variable "http_secret" {
   type        = string
   description = "A random piece of data used to sign state that may be stored with the client to protect against tampering. For production environments you should generate a random piece of data using a cryptographically secure random generator."
-  default     = "pleasechangethissecret"
 }
 
 variable "s3_access_key" {
@@ -49,13 +48,11 @@ variable "s3_secret_key" {
 variable "s3_bucket" {
   type        = string
   description = "s3 bucket where the images will be stored"
-  default     = "di-docker-private-registry"
 }
 
 variable "s3_region" {
   type        = string
   description = "aws region where the s3 bucket lives"
-  default     = "eu-west-1"
 }
 
 variable "service_port" {
