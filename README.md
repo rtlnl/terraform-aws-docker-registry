@@ -10,7 +10,7 @@ Include the following in your `main.tf` file to include the private docker regis
 
 module "docker-registry" {
   source = "github.com/rtlnl/terraform-aws-docker-registry"
-  ref = ""
+  version = "1.0.0"
 
   http_secret            = "randomlygeneratedstring"
   s3_access_key          = "<s3_access_key>"
