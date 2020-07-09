@@ -4,9 +4,9 @@ This repo contains a terraform module to deploy a privately managed docker regis
 
 ## Usage
 
-```terraform
-
 Include the following in your `main.tf` file to include the private docker registry in your infrastructure.
+
+```terraform
 
 module "docker-registry" {
   source = "github.com/rtlnl/terraform-aws-docker-registry"
