@@ -5,8 +5,8 @@ resource "aws_s3_bucket" "docker_registry_bucket" {
 }
 
 module "docker-registry" {
-  source = "github.com/rtlnl/terraform-aws-docker-registry"
-  version = "1.0.0"
+  source  = "rtlnl/docker-registry/aws"
+  version = "0.0.1"
 
   http_secret            = "randomlygeneratedstring"
   s3_access_key          = "<s3_access_key>"
