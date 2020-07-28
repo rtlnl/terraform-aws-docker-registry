@@ -32,6 +32,7 @@ resource "kubernetes_config_map" "docker_registry_config" {
     "config.yml"                 = "${file("${path.module}/templates/config.yml")}"
     "REGISTRY_STORAGE_S3_REGION" = var.s3_region
     "REGISTRY_STORAGE_S3_BUCKET" = var.s3_bucket
+    "SEARCH_BACKEND"             = "sqlalchemy"
   }
 }
 
